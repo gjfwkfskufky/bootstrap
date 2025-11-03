@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>feedback form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+ <h1 class="card-title mb-4 text-center">Feedback form</h1>
+ <div class="form-group">
+  <label for="usr">Name:</label>
+  <input type="text" class="form-control" id="usr" placeholder="Enter username">
+</div>
+<div class="form-group">
+  <label for="pwd">Password:</label>
+  <input type="password" class="form-control" id="pwd" Placeholder="Email">
+</div>
+<div class="form-group">
+  <label for="feedback">your feedback:</label>
+  <textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+    <label>preferred contact method</label><br>
+<div class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input "name="optradio">Email
+  </label>
+</div>
+<div class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input"name="optradio" >phone
+  </label>
+</div>
+
+<div class="mb-3">
+                  <label for="orderType" class="form-label">Type of order</label>
+                  <select class="form-select" id="orderType">
+                    <option selected>Choose...</option>
+                    <option value="Cake">Cake</option>
+                    <option value="Cookies">Cookies</option>
+                    <option value="Pastries">Pastries</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="satisfaction" class="form-label d-flex justify-content-between align-items-center">Satisfaction <span id="satisfactionValue" class="badge bg-secondary ms-2">5</span></label>
+      <input type="range" class="form-control-range" name="range" min="1" max="10" id="satisfaction" value="5">
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Submit</button>
